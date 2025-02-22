@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Peer-to-Peer Chat Application
 
-## Getting Started
+## Goal
+This project aims to develop a peer-to-peer (P2P) chat application that enables users to send and receive messages simultaneously, supports multiple peers, and allows users to query and retrieve a list of peers they have communicated with.
 
-First, run the development server:
+## Team Members
+- **Sameer Choudhary (230001070)**
+- **Vansh Khandelwal(230041038)**
+- **Jai Pannu(230004019)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Setup Guide
+
+### 1. Backend Setup (Flask)
+
+#### Step 1: Create a Virtual Environment
+```sh
+python -m venv venv
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Step 2: Activate the Virtual Environment
+**Windows:**
+```sh
+venv\Scripts\activate
+```
+**macOS/Linux:**
+```sh
+source venv/bin/activate
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+#### Step 3: Install Dependencies
+Make sure you have `requirements.txt`, then run:
+```sh
+pip install -r requirements.txt
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Step 4: Run the Flask Application
+Run the backend server by executing:
+```sh
+python app.py
+```
+During execution, you'll be prompted to enter:
+- **Socket Server Port**: Used for P2P messaging.
+- **Flask API Port**: Used for API communication.
 
-## Learn More
+**Example input:**
+```sh
+Enter your socket server port (for P2P messaging): 5001
+Enter flask api: 5050
+```
+The Flask API will be accessible at **http://localhost:5050/**.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Frontend Setup (Next.js)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Step 1: Install Dependencies
+Navigate to the frontend directory and run:
+```sh
+npm install
+```
 
-## Deploy on Vercel
+#### Step 2: Start the Next.js App
+```sh
+npm run dev
+```
+The application will be available at **http://localhost:3000/** by default.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Now, your P2P chat application is set up and ready to use! 🚀
+

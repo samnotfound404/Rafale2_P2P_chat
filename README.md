@@ -46,10 +46,10 @@ During execution, you'll be prompted to enter:
 
 **Example input:**
 ```sh
-Enter your socket server port (for P2P messaging): 5001
-Enter flask api: 5050
+Enter your socket server port (for P2P messaging): 1
+Enter flask api: 2001
 ```
-The Flask API will be accessible at **http://localhost:5050/**.
+The Flask API will be accessible at **http://localhost:2001/**.
 
 ---
 

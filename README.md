@@ -5,8 +5,15 @@ This project aims to develop a peer-to-peer (P2P) chat application that enables 
 
 ## Team Members
 - **Sameer Choudhary (230001070)**
-- **Vansh Khandelwal(230041038)**
-- **Jai Pannu(230004019)**
+- **Vansh Khandelwal (230041038)**
+- **Jai Pannu (230004019)**
+
+## Demo Video
+
+
+https://github.com/user-attachments/assets/4ab2cabd-e675-4ba1-b1b5-7f3519799cbc
+
+
 
 ---
 
